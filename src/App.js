@@ -6,6 +6,7 @@ import NewRoomForm from "./components/NewRoomForm";
 import Chatkit from "@pusher/chatkit";
 import { instanceLocator, testToken, username } from "./chat-config";
 import "bootstrap/dist/css/bootstrap.css";
+// import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -92,8 +93,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-          <a className="navbar-brand" href="https:www.google.com">
-            React Chat Application
+          <a className="navbar-brand" href="#">
+            React Application
           </a>
         </nav>
 
@@ -107,7 +108,10 @@ class App extends Component {
             />
           </div>
           <div className="col col-md-9">
-            <MessageList messages={this.state.messages} />
+            <MessageList
+              messages={this.state.messages}
+              roomId={this.state.roomId}
+            />
             <SendMessageForm sendMessage={this.sendMessage} />
           </div>
         </div>
