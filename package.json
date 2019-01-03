@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@pusher/chatkit": "^0.7.18",
+    "@pusher/chatkit-client": "^1.2.2",
+    "bootstrap": "^4.2.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.2"
